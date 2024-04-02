@@ -23,14 +23,16 @@ template = """
 """
 prompt = ChatPromptTemplate.from_template(template=template)
 contents = TextLoader("test.txt").load()
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20)
+text_splitter = RecursiveCharacterTextSplitter(
+    separators=['\n\n','\n','.'],
+    chunk_size=1000, 
+    chunk_overlap=20)
 docs = text_splitter.split_documents(contents)
 vector_store = FAISS.from_documents(docs, embedding=embedding)
 retriever = vector_store.as_retriever()
-
 document_chain = create_stuff_documents_chain(llm, prompt)
 retrieval_chain = create_retrieval_chain(retriever, document_chain)
 
-response = retrieval_chain.invoke({"input":"who is afreedi"})
+response = retrieval_chain.invoke({"input":"family of afreedi"})
 
 print(response)

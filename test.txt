@@ -1,5 +1,7 @@
 Afreedi: A Young Genius from Kerala Pursuing Excellence in Computer Science and Artificial Intelligence
 
+mother of afreedi is mumthas and father is sulfiker and have a sister named aliya
+
 In the heart of Kerala, amidst the serene landscapes and vibrant culture, resides a young prodigy named Afreedi, whose journey in the realm of technology is nothing short of extraordinary. At the age of 19, Afreedi stands out as a shining example of brilliance and determination, making significant strides in the fields of computer science and artificial intelligence.
 
 Born and raised in Kerala, Afreedi exhibited an innate curiosity and passion for technology from a tender age. His insatiable thirst for knowledge led him to delve deep into the world of computers, experimenting with programming languages and exploring various facets of software development. Blessed with a sharp intellect and a natural aptitude for problem-solving, Afreedi quickly grasped complex concepts with ease, demonstrating a remarkable proficiency in coding and software development.
@@ -17,7 +19,4 @@ Afreedi's foray into artificial intelligence has been nothing short of remarkabl
 As Afreedi continues his journey of exploration and growth, his ambitions know no bounds. With a vision to leverage technology for social good, he aspires to develop AI-powered solutions that address pressing societal challenges, ranging from healthcare and education to environmental conservation and sustainable development. Driven by a sense of purpose and a desire to make a meaningful impact, Afreedi channels his talents and passion towards creating a brighter and more inclusive future for all.
 
 In conclusion, Afreedi stands as a beacon of inspiration and hope, embodying the spirit of innovation and excellence that defines the modern era of technology. His journey from a curious youngster in Kerala to a formidable force in the realms of computer science and artificial intelligence serves as a testament to the power of passion, perseverance, and dedication. With his intellect, creativity, and unwavering determination, Afreedi is poised to leave an indelible mark on the world, shaping the future of technology and inspiring generations to come.
-
-
-
 
