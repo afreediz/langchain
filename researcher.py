@@ -45,27 +45,26 @@ def process_url():
     return docs
 
 def create_database(docs):
-    return FAISS.from_documents(docs, embeddings)
+    vectorstore = FAISS.from_documents(docs, embeddings)
+    vectorstore.save_local("vector_db")
+
 
 url = st.sidebar.text_input("enter the url")
 process_url_button = st.sidebar.button("create knowledge base")
 
 if process_url_button:
     docs = process_url()
-    vector_db = create_database(docs)
+    create_database(docs)
 
 question = st.text_input("Enter your question")
 answer = st.button("get answer")
 
 if answer:
-    docs = process_url()
-    vector_db = create_database(docs)
     if len(question) == 0:
         st.write("question cannot be empty")
+    vector_db = FAISS.load_local("vector_db",embeddings,allow_dangerous_deserialization=True)
     retriever = vector_db.as_retriever()
     document_chain = create_stuff_documents_chain(llm, prompt)
     retriever_chain = create_retrieval_chain(retriever, document_chain)
     st.write(retriever_chain.invoke({"input":question})["answer"])
-    res = retriever_chain.invoke({"input":"birthdat of stephen hawking"})
-    print(res)
 
